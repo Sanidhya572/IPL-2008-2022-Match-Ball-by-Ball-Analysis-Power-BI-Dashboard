@@ -145,7 +145,7 @@ These measures enable dynamic filtering and in-depth cricket analytics.
 
 ## 📸 Dashboard Preview
 
-<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/de9da950-9bd5-4683-99fe-e75d5c3ef867" />
+<img width="686" height="415" alt="image" src="https://github.com/user-attachments/assets/81f70a15-d925-49a8-9d7c-1777a2bb63ca" />
 
 
 ---
