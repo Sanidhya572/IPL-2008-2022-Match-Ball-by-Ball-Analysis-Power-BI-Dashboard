@@ -145,7 +145,8 @@ These measures enable dynamic filtering and in-depth cricket analytics.
 
 ## 📸 Dashboard Preview
 
-_Add exported PNG screenshots in the `screenshots/` folder and link below_
+<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/de9da950-9bd5-4683-99fe-e75d5c3ef867" />
+
 
 ---
 
