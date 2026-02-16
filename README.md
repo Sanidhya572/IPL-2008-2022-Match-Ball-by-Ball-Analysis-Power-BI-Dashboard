@@ -180,20 +180,6 @@ The relationship between match-level and ball-by-ball data enables multi-dimensi
 
 ---
 
-## 📁 Repository Structure
-
-```
-IPL-Data-Analysis-Dashboard
-│
-├── README.md
-├── ipl_matches_2008_2022.csv
-├── ipl_ball_by_ball_2008_2022.csv
-├── IPL Analysis Final.pbix
-└── screenshots/
-```
-
----
-
 ## 🎯 Project Outcome
 
 This project demonstrates:
