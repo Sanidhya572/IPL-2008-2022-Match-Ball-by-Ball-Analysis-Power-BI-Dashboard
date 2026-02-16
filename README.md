@@ -147,13 +147,6 @@ These measures enable dynamic filtering and in-depth cricket analytics.
 
 _Add exported PNG screenshots in the `screenshots/` folder and link below_
 
-```markdown
-![IPL Overview](screenshots/ipl_overview.png)
-![Batting Analysis](screenshots/batting_analysis.png)
-![Bowling Analysis](screenshots/bowling_analysis.png)
-![Team Performance](screenshots/team_performance.png)
-```
-
 ---
 
 ## 🏗 Data Model Architecture
