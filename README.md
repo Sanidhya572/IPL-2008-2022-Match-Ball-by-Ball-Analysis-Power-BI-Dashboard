@@ -1,209 +1,302 @@
-# IPL-2008-2022-Match-Ball-by-Ball-Analysis-Power-BI-Dashboard
-Comprehensive IPL data analysis dashboard built using match-level and ball-by-ball data (2008–2022), featuring player performance insights, team analysis, and advanced cricket statistics in Power BI.
+# 🏏 IPL 2008–2022 — Match & Ball-by-Ball Analysis | Power BI Dashboard
 
-# 🏏 IPL Data Analysis Dashboard (2008–2022)  
-## Match & Ball-by-Ball Cricket Analytics | Power BI Project
+<p align="left">
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+  <img src="https://img.shields.io/badge/DAX-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+  <img src="https://img.shields.io/badge/Power_Query-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+  <img src="https://img.shields.io/badge/Cricket_Analytics-0078D4?style=for-the-badge&logo=cricket&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSV-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
+</p>
 
----
-
-## 🚀 Project Overview
-
-This project provides a comprehensive analysis of Indian Premier League (IPL) data from 2008 to 2022 using Power BI.
-
-Using both match-level and ball-by-ball datasets, this dashboard delivers deep insights into:
-
-- Team performance trends  
-- Player statistics  
-- Match outcomes  
-- Batting and bowling analysis  
-- Season-wise comparisons  
-
-The goal is to transform raw cricket data into structured analytical insights for performance evaluation and strategic understanding.
-
----
-
-## 🧠 Business / Analytical Objective
-
-Cricket analytics plays a key role in understanding team performance, player contributions, and match strategies.
-
-This project answers key questions such as:
-
-- Which teams have performed consistently across seasons?
-- Who are the top run scorers and wicket-takers?
-- How does performance vary by venue?
-- What are the scoring patterns across overs?
-- Which teams dominate head-to-head matchups?
-- How do toss decisions influence match results?
-
-The dashboard enables interactive exploration of 15+ years of IPL data.
-
----
-
-## 📂 Dataset Description
-
-### 1️⃣ Match-Level Dataset  
-**File:** `ipl_matches_2008_2022.csv`
-
-Contains:
-
-- Match ID  
-- Season  
-- Date  
-- Venue  
-- Team1  
-- Team2  
-- Toss Winner  
-- Toss Decision  
-- Match Winner  
-- Result Margin  
-
----
-
-### 2️⃣ Ball-by-Ball Dataset  
-**File:** `ipl_ball_by_ball_2008_2022.csv`
-
-Contains:
-
-- Match ID  
-- Over  
-- Ball  
-- Batting Team  
-- Bowling Team  
-- Batsman  
-- Bowler  
-- Runs Scored  
-- Extra Runs  
-- Wicket Information  
-
-This dataset enables granular performance analysis at delivery level.
-
----
-
-## 🛠 Tools & Technologies Used
-
-- **Power BI** – Data modeling and dashboard development  
-- **Power Query** – Data cleaning & transformation  
-- **DAX** – KPI calculations and advanced measures  
-- **Relational Data Modeling** – Match ID-based relationship between datasets  
-- **GitHub** – Documentation and version control  
-
----
-
-## 📈 Key Measures Used in the Dashboard
-
-The following KPIs and calculated measures were created:
-
-- Total Matches Played  
-- Total Runs Scored  
-- Total Wickets  
-- Top Run Scorers  
-- Top Wicket Takers  
-- Strike Rate Analysis  
-- Economy Rate Analysis  
-- Team Win Percentage  
-- Toss Impact Analysis  
-- Venue-wise Performance  
-- Season-wise Trends  
-
-These measures enable dynamic filtering and in-depth cricket analytics.
-
----
-
-## 📊 Dashboard Features
-
-### 1️⃣ Team Performance Analysis
-- Matches Played
-- Win Percentage
-- Head-to-Head Comparison
-- Season-wise Performance Trends
-
----
-
-### 2️⃣ Batting Analysis
-- Top Run Scorers
-- Strike Rate Comparison
-- Runs by Season
-- Boundary Analysis
-
----
-
-### 3️⃣ Bowling Analysis
-- Leading Wicket Takers
-- Economy Rate Analysis
-- Bowling Performance by Over
-- Wicket Distribution Patterns
-
----
-
-### 4️⃣ Match Insights
-- Toss Decision Impact
-- Venue-Based Analysis
-- Result Margin Trends
-- Season Comparisons (2008–2022)
+A 5-page interactive Power BI dashboard analyzing **15 seasons of IPL cricket** (2008–2022) across **950 matches** and **225,954 deliveries**. Built on two datasets — match-level and ball-by-ball — the report delivers season-filtered general summaries, venue analytics, batting and bowling deep-dives, and Player of the Match tracking across the full history of the tournament.
 
 ---
 
 ## 📸 Dashboard Preview
 
-<img width="686" height="415" alt="image" src="https://github.com/user-attachments/assets/81f70a15-d925-49a8-9d7c-1777a2bb63ca" />
+### 🔹 General Summary
+![General Summary](./screenshots/General_Summary.png)
 
+### 🔹 Season Statistics — Stadiums & Player of the Match
+![Season Statistics](./screenshots/Season_Statistics.png)
+
+### 🔹 Batsmen Statistics
+![Batsmen Statistics](./screenshots/Batsmen_Statistics.png)
+
+### 🔹 Bowler Statistics
+![Bowler Statistics](./screenshots/Bowler_Statistics.png)
+
+> 📌 **To add screenshots:** Open the `.pbix` file → navigate to each page → export or screenshot → save as `.png` inside a `/screenshots` folder in the repo root.
 
 ---
 
-## 🏗 Data Model Architecture
+## 🔢 Tournament-Wide KPIs (2008–2022)
 
-```
-ipl_matches_2008_2022.csv  
-            │  
-            │ (Match ID Relationship)  
-            ▼  
-ipl_ball_by_ball_2008_2022.csv  
-            ↓  
-Data Cleaning & Transformation  
-            ↓  
-KPI & Measure Creation  
-            ↓  
-Interactive Power BI Dashboard
-```
+| Metric | Value |
+|---|---|
+| 🏟️ Total Matches | 950 |
+| 🎯 Total Deliveries | 2,25,954 |
+| 🏃 Total Runs Scored | 2,80,979 |
+| 🎳 Total Wickets Taken | 11,151 |
+| 6️⃣ Total Sixes | 10,666 |
+| 4️⃣ Total Fours | 25,500 |
+| 📅 Seasons Covered | 15 (2007/08 – 2022) |
+| 🏟️ Unique Venues | 49 |
+| 🏙️ Cities | 33 |
+| 🏆 Teams (incl. defunct) | 18 |
 
-The relationship between match-level and ball-by-ball data enables multi-dimensional analysis.
+---
+
+## 📋 Dashboard Pages
+
+| Page | Description |
+|---|---|
+| **1. Title Page** | Branded cover page for the IPL Data Analysis report |
+| **2. General Summary** | Season-filtered view — Title Winner, Orange Cap, Purple Cap, 6s, 4s, toss analysis, win-by-type, team wins, venue wins |
+| **3. Season Statistics** | Stadium match count by season, Super Over toss decisions, Player of the Match treemap |
+| **4. Batsmen Statistics** | Top 10 run-scorers (all-time), dismissal type breakdown, percentage contribution of Top 4 |
+| **5. Bowler Statistics** | Top 5 wicket-takers (all-time), extra runs conceded, treemap and pie chart comparisons |
+
+---
+
+## 📊 Visuals & Charts
+
+### Page 2 — General Summary *(Season Filter: 2008–2022)*
+
+**KPI Cards (Season-Filtered)**
+Five headline cards show the Title Winner, Orange Cap holder (most runs), Purple Cap holder (most wickets), total Tournament 6's, and total Tournament 4's — all updating dynamically when a season is selected.
+
+**Matches Win Based on Toss — Donut Chart**
+Across all seasons, toss winners who chose to **field first** dominated: 599 of 950 (63.05%) toss decisions were to field — confirming chasing is the preferred and statistically stronger strategy in T20 cricket.
+
+**Matches Win by Result Type — Donut Chart**
+| Result Type | Count | Share |
+|---|---|---|
+| Won by Wickets | 509 | 53.58% |
+| Won by Runs | 423 | 44.53% |
+| Super Over | 14 | 1.47% |
+| No Result | 4 | 0.42% |
+
+**Total Wins by Team for a Season — Bar Chart**
+Season-specific team wins leaderboard. In 2016 (example): SRH 11, Gujarat Lions 9, RCB 9, KKR 8, DD 7, MI 7.
+
+**Matches Win by Venue — Stacked Bar Chart**
+Venue-wise breakdown of wins by runs vs wickets — identifying home-ground advantages and pitch behaviour patterns.
+
+---
+
+### Page 3 — Season Statistics
+
+**Count of Matches by Stadium/Season — Bar Chart**
+M Chinnaswamy Stadium (Bengaluru) leads with 9 matches in 2016, followed by Eden Gardens, Feroz Shah Kotla, Punjab Cricket Association, and Rajiv Gandhi International Stadium at 7 each.
+
+**Super Over by Toss Decision — Matrix**
+Tracks how often teams winning the toss chose to field vs bat in Super Over situations. In 2016: field 49 instances, bat 11.
+
+**Player of the Match by Season — Treemap**
+Visual treemap showing Player of the Match award frequency per season. V Kohli leads with 5 awards in 2016, followed by AB de Villiers (4), RG Sharma (4), AD Russell (3), DA Warner (3).
+
+**All-Time Player of the Match Leaders:**
+| Player | Awards |
+|---|---|
+| AB de Villiers | 25 |
+| CH Gayle | 22 |
+| DA Warner | 18 |
+| RG Sharma | 18 |
+| MS Dhoni | 17 |
+
+---
+
+### Page 4 — Batsmen Statistics *(All-Time 2008–2022)*
+
+**Runs Scored by Top 10 Batsmen — Bar Chart**
+| Batsman | Total Runs |
+|---|---|
+| V Kohli | 6,634 |
+| S Dhawan | 6,244 |
+| DA Warner | 5,883 |
+| RG Sharma | 5,881 |
+| SK Raina | 5,536 |
+| AB de Villiers | 5,181 |
+| CH Gayle | 4,997 |
+| MS Dhoni | 4,978 |
+| RV Uthappa | 4,954 |
+| KD Karthik | 4,377 |
+
+**Percentage of Runs by Top 4 — Donut Chart**
+Among the Top 4 batsmen's combined total:
+| Batsman | Share |
+|---|---|
+| V Kohli | 27.76% |
+| S Dhawan | 26.49% |
+| RG Sharma | 24.56% |
+| RV Uthappa | 21.18% |
+
+**Count of Top 10 Batsmen by Dismissal Type — Stacked Bar Chart**
+Breaks down how each of the top 10 batsmen was dismissed — caught, bowled, caught & bowled, lbw, hit wicket — revealing vulnerability patterns. *Caught* is the dominant dismissal type across all batsmen.
+
+---
+
+### Page 5 — Bowler Statistics *(All-Time 2008–2022)*
+
+**Wickets Taken by Top 5 Bowlers — Treemap + Pie Chart**
+| Bowler | Wickets |
+|---|---|
+| DJ Bravo | 207 |
+| SL Malinga | 188 |
+| A Mishra | 175 |
+| R Ashwin | 174 |
+| YS Chahal | 172 |
+
+**Sum of Extra Runs by Top 5 Bowlers — Bar Chart**
+| Bowler | Extra Runs Conceded |
+|---|---|
+| SL Malinga | 292 |
+| DJ Bravo | 258 |
+| R Ashwin | 209 |
+| YS Chahal | 175 |
+| A Mishra | 125 |
 
 ---
 
 ## 💡 Key Insights
 
-- Certain teams show strong seasonal dominance patterns.
-- Toss decisions have measurable impact on match outcomes.
-- Strike rate and boundary frequency significantly influence match-winning innings.
-- Specific venues demonstrate high-scoring trends.
-- Consistent bowlers maintain low economy rates across seasons.
+**1. V Kohli is the all-time leading run-scorer with 6,634 runs across 15 seasons**
+Kohli's consistency is unmatched — nearly 600 more runs than the second-placed Shikhar Dhawan (6,244). He also led Player of the Match awards in 2016 with 5 in a single season.
+
+**2. DJ Bravo leads all bowlers with 207 wickets — but concedes the second-most extras**
+Bravo's wicket-taking ability (207) edges SL Malinga (188), but Malinga concedes the most extra runs (292), suggesting aggression comes with control trade-offs.
+
+**3. Teams choosing to field first win significantly more often**
+63.05% of toss-winning captains chose to field, and the match results validate this strategy — 53.58% of matches were won by wickets (chasing), vs 44.53% by runs (defending).
+
+**4. 10,666 sixes hit across 15 seasons — averaging 11.2 sixes per match**
+The sheer volume of boundaries (25,500 fours + 10,666 sixes) underscores the explosive nature of T20 cricket and the premium on boundary-hitting batsmen.
+
+**5. AB de Villiers is the most impactful match-winner in IPL history**
+With 25 Player of the Match awards — 3 more than the next best (CH Gayle at 22) — de Villiers consistently delivered in crunch situations.
+
+**6. Caught dismissals dominate across all top batsmen**
+The dismissal type analysis reveals that across all top 10 batsmen, being caught is by far the most common mode of dismissal — a key insight for bowling and fielding strategy.
 
 ---
 
-## 🎯 Project Outcome
+## 🗂️ Dataset Overview
 
-This project demonstrates:
+### Dataset 1: `ipl_matches_2008_2022.csv`
+**950 matches · 18 columns**
 
-- Multi-table relational data modeling  
-- Sports analytics capability  
-- Advanced KPI design  
-- Large dataset handling  
-- Interactive dashboard storytelling  
-- Performance trend analysis over 15 seasons  
+| Category | Columns |
+|---|---|
+| Match Info | id, match_date, season, match_number, venue, city |
+| Teams | team1, team2, toss_winner, toss_decision, winning_team |
+| Result | won_by, margin, method, superover |
+| Awards | player_of_match |
+| Officials | umpire1, umpire2 |
+
+### Dataset 2: `ipl_ball_by_ball_2008_2022.csv`
+**2,25,954 deliveries · 17 columns**
+
+| Category | Columns |
+|---|---|
+| Match Reference | id, innings, overs, ball_number |
+| Batting | batter, non_striker, batsman_run, batting_team |
+| Bowling | bowler, extras_run, extra_type, total_run, non_boundary |
+| Wickets | iswicket_delivery, player_out, dismisal_kind, fielders_involved |
 
 ---
 
-## 🔮 Future Enhancements
+## ⚙️ DAX Measures Used
 
-- Predictive match outcome modeling  
-- Player performance forecasting  
-- Advanced clustering for team comparison  
-- Integration with live IPL data API  
+```dax
+-- Total Runs
+Total Runs = SUM('ball_by_ball'[batsman_run])
+
+-- Total Wickets
+Total Wickets = SUM('ball_by_ball'[iswicket_delivery])
+
+-- Total Sixes
+Total Sixes = COUNTROWS(FILTER('ball_by_ball', 'ball_by_ball'[batsman_run] = 6))
+
+-- Total Fours
+Total Fours = COUNTROWS(FILTER('ball_by_ball', 'ball_by_ball'[batsman_run] = 4))
+
+-- Orange Cap (Season Top Scorer)
+-- Achieved via TOP N filter on batter grouped by season
+
+-- Purple Cap (Season Top Wicket-Taker)
+-- Achieved via TOP N filter on bowler grouped by season
+```
 
 ---
 
-## 📌 Conclusion
+## 🏆 IPL Title Winners (2008–2022)
 
-This IPL Data Analysis Dashboard provides a comprehensive analytical view of 15 seasons of cricket data.
+| Season | Champion |
+|---|---|
+| 2008 | Rajasthan Royals |
+| 2009 | Deccan Chargers |
+| 2010 | Chennai Super Kings |
+| 2011 | Chennai Super Kings |
+| 2012 | Kolkata Knight Riders |
+| 2013 | Mumbai Indians |
+| 2014 | Kolkata Knight Riders |
+| 2015 | Mumbai Indians |
+| 2016 | Sunrisers Hyderabad |
+| 2017 | Mumbai Indians |
+| 2018 | Chennai Super Kings |
+| 2019 | Mumbai Indians |
+| 2020 | Mumbai Indians |
+| 2021 | Chennai Super Kings |
+| 2022 | Gujarat Titans |
 
-It showcases how structured data modeling and visualization techniques can transform sports statistics into meaningful performance insights.
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool | Usage |
+|---|---|
+| **Power BI Desktop** | Dashboard design, data modeling, 5-page report |
+| **DAX** | Season-filtered KPIs, rankings, custom measures |
+| **Power Query (M)** | Data cleaning, relationship setup between both datasets |
+| **CSV (2 files)** | Match-level + ball-by-ball source data |
+
+---
+
+## 📁 File Structure
+
+```
+IPL-2008-2022-Match-Ball-by-Ball-Analysis-Power-BI-Dashboard/
+│
+├── IPL_Analysis_Final.pbix              # Power BI report file (5 pages)
+├── ipl_matches_2008_2022.csv            # Match-level dataset (950 rows, 18 cols)
+├── ipl_ball_by_ball_2008_2022.csv       # Ball-by-ball dataset (225,954 rows, 17 cols)
+│
+├── screenshots/
+│   ├── General_Summary.png              # Page 2 screenshot
+│   ├── Season_Statistics.png            # Page 3 screenshot
+│   ├── Batsmen_Statistics.png           # Page 4 screenshot
+│   └── Bowler_Statistics.png            # Page 5 screenshot
+│
+└── README.md                            # Project documentation
+```
+
+---
+
+## 🚀 How to Use
+
+1. Clone or download this repository
+2. Open `IPL_Analysis_Final.pbix` in **Power BI Desktop**
+3. If prompted, reconnect both CSVs (`ipl_matches_2008_2022.csv` and `ipl_ball_by_ball_2008_2022.csv`) as data sources
+4. Use the **Season slicer** on the General Summary page to filter all KPIs by year
+5. Navigate across the 5 pages using the tabs at the bottom of Power BI Desktop
+
+---
+
+## 👤 Author
+
+**Sanidhya Rajguru** — Data Analyst | Power BI Developer | MIS Analyst
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=netlify&logoColor=white)](YOUR_PORTFOLIO_URL_HERE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](YOUR_LINKEDIN_URL_HERE)
+[![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sanidhya572)
